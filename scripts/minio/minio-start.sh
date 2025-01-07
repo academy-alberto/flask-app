@@ -1,0 +1,7 @@
+#!/bin/bash
+docker exec -it minikube mkdir /data/minio
+kubectl apply -f ~/flask-app/manifest/minio/minio-ns.yml
+kubectl apply -f ~/flask-app/manifest/minio/.
+kubectl get svc -n minio
+kubectl get pod minio -n minio --watch
+
