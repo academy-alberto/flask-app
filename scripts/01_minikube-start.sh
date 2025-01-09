@@ -6,4 +6,4 @@ minikube start  \
 
 clear
 
-echo "=== Minikube Cluster Started Succesfully ===
+echo "=== Minikube Cluster Started Succesfully ==="
