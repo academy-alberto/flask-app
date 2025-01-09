@@ -8,3 +8,8 @@ gpgkey=https://pkgs.k8s.io/core:/stable:/v1.32/rpm/repodata/repomd.xml.key
 EOF
 
 sudo yum install -y kubectl
+
+clear
+
+echo "=== Kubectl Installed Succesfully ===
+
