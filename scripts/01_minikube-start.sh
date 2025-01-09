@@ -1,8 +1,8 @@
 #!/bin/bash
 
 minikube start  \
-    --cpus 4 \
-    --memory 10g \
+    --cpus 6 \
+    --memory 14g \
 
 clear
 
