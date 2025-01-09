@@ -5,3 +5,7 @@ sudo chmod 700 get_helm.sh
 ./get_helm.sh
 
 sudo rm get_helm.sh
+
+clear
+
+echo "=== Helm Sucessfully Installed ==="
