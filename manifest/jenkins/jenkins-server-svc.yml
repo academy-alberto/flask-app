@@ -7,6 +7,7 @@ metadata:
   name: jenkins
   namespace: jenkins
 spec:
+  type: NodePort
   ports:
   - name: port-1
     port: 8080
