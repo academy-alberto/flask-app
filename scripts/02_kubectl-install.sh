@@ -11,5 +11,5 @@ sudo yum install -y kubectl
 
 clear
 
-echo "=== Kubectl Installed Succesfully ===
+echo "=== Kubectl Installed Succesfully ==="
 
