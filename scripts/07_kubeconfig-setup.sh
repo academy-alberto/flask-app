@@ -6,3 +6,6 @@ docker exec halyard mkdir /home/spinnaker/.kube
 
 docker cp ~/.kube/config halyard:/home/spinnaker/.kube/config
 
+clear
+
+echo "=== KubeConfig Copied Successfully ==="

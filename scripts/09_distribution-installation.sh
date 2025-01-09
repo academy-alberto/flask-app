@@ -1,1 +1,1 @@
-hal config deploy edit --type distributed --account-name my-k8s-account 
+docker exec halyard hal config deploy edit --type distributed --account-name my-k8s-account 
