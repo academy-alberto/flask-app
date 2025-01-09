@@ -1,0 +1,37 @@
+{
+  "applications": [
+    "simple-webapp"
+  ],
+  "classifier": {
+    "groupWeights": {
+      "Group 1": 100
+    }
+  },
+  "configVersion": "1",
+  "description": "",
+  "judge": {
+    "judgeConfigurations": {},
+    "name": "NetflixACAJudge-v1.0"
+  },
+  "metrics": [
+    {
+      "analysisConfigurations": {
+        "canary": {
+          "direction": "increase"
+        }
+      },
+      "groups": [
+        "Group 1"
+      ],
+      "name": "average rate of request duration",
+      "query": {
+        "customInlineTemplate": "PromQL:avg(rate(flask_http_request_duration_seconds_sum{pod=~\"${scope}.+\"}[1m]))",
+        "serviceType": "prometheus",
+        "type": "prometheus"
+      },
+      "scopeName": "default"
+    }
+  ],
+  "name": "simple-webapp-canary",
+  "templates": {},
+}
